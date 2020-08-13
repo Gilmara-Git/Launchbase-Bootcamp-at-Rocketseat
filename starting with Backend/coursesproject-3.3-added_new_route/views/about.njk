@@ -1,0 +1,56 @@
+
+{% extends "layout.njk" %}
+
+    {% block title %} 
+        <title>Sobre - {{DatAbout.title}}</title>
+    {% endblock %}
+
+        {% block content %}
+    <div id="wrapper">
+        
+        <h1>{{DatAbout.title}}</h1>
+        
+        <img src="{{DatAbout.img_logo}}" alt="Logo">
+        
+                <p>{{DatAbout.p1}}</p>
+                
+                <p>{{DatAbout.p2}}</p>
+                  
+    </div>
+
+        <div Id="list-title">
+            <h4>{{DatAbout.main_techs}}</h4>
+        </div>       
+            
+        
+            <div id="list"> 
+                
+                {% for tech in DatAbout.techs %}
+                    <ul type="disc">
+                        <!--default type is disc -->                  
+                    
+                        <li>{{tech.tech_name}}</li>              
+                                                        
+                    </ul>   
+
+                {% endfor %}  
+
+            </div>                         
+
+
+        <div id="links-footer" class="links" class="links-color">
+
+        {% for link in DatAbout.links %}  
+
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+
+        {% endfor %}
+            
+    </div>
+             
+
+    {% endblock %}
+
+
+
+

@@ -1,0 +1,22 @@
+
+    {% extends "layout.njk" %}
+        
+    {% block title %} 
+        <title>Curso - {{item.name}}</title>
+    {% endblock %}
+
+
+    {% block content %}
+    <div id="wrapper_courses">
+        <h1 id="course_name">{{item.name}}</h1>
+    </div>
+
+    <section class="courses">    
+
+        <div class="card_courses" id="{{item.id}}">
+            <div id="card_course_container" id="s">
+                <iframe id="course_iframe" src="https://rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>                
+                
+    </section>  
+
+{% endblock %}
