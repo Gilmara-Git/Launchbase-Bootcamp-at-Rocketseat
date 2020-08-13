@@ -1,0 +1,375 @@
+/*@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";*/
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+
+
+
+:root {
+    --color-black: #111111;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+     
+   
+}
+
+.main {
+
+    margin:0 auto;
+    width:940px;
+    
+
+}
+
+header {
+    padding: 30px 30px 30px 0px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 90.6px;    
+    height: 26.9px;
+    opacity: 1;
+    color: var(--color-black);
+}
+
+header a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 19px;
+    line-height: 26px;
+}
+
+.links-top {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width:940px;
+   
+}
+
+/*.links-top img{
+
+margin-bottom: 30px;
+
+}*/
+
+.links-top #sobre {
+    width: 42px;
+    height: 19px;
+    margin-left: 122.4px;
+    /* margin-bottom:36px;*/
+    opacity: 1;
+}
+
+.links-top #receitas {
+    width: 62px;
+    height: 19px;
+    margin-left: 30px;
+    /*margin-bottom: 36px;*/
+    opacity: 1;
+}
+
+#sobre:hover {
+
+    font-weight: bold;
+     transition: 0.5s; 
+ 
+ }
+
+ #receitas:hover{ 
+ font-weight: bold;
+ transition: 0.5s; 
+ 
+
+}
+
+
+.background-img {
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    opacity: 1;
+    position: relative;
+    margin: 0 auto;
+}
+
+.background-img img {
+    width: 216px;
+    height: 300px;
+    padding: 66 100 0 624;
+}
+
+.title {
+    position: absolute;
+    top: 31.96%;
+    margin-left: 60px;
+    width: 307px;
+    height: 38px;
+    color: var(--color-black);
+    font-size: 32px;
+    line-height: 42px;
+    padding: 0 38px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.phrase {
+    position: absolute;
+    top: 45.08%;
+    margin-left: 65px;
+    width: 316px;
+    height: 84px;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 28px;
+    opacity: 0.7;
+}
+
+.hot-topics {
+    width: 940px;
+    height: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--color-black);
+    font-size: 24px;
+    line-height: 34px;  
+    opacity: 1;
+    font-weight:bold;
+    
+}
+
+/*=== Working on Card ===*/
+
+.card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-name {
+    width: 249px;
+    height: 21px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 21px 0 0;
+    opacity: 1;
+}
+
+.food-author {
+    width: 118px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 16px 0 0;
+    color: #777777;
+    opacity: 1;
+    font-weight: bold;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/*== Footer */ 
+
+.text {
+    /*Ajustar o width depois que arrumar o footer*/
+    width: 340px;
+    height: 16px;
+    color: #999999;
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: absolute;
+   
+  
+}
+
+
+/* == Extra padding on pages receitas and sobre == */
+
+#extra-padding{ 
+    padding: 30px 30px 50px 0px;
+         
+}
+/*==  Page Sobre ==  */
+.about {
+
+    width: 164px;
+    height: 28px;    
+    margin-bottom: 20px;  
+    padding: 0 28px 0 0; 
+    font-size:24px;
+    line-height: 34px;
+    font-weight: bold;
+    color:var(--color-black);
+    opacity:1;
+       
+
+}
+
+
+#box1, #box2 {
+
+    Width:940px;
+    height:280px;
+    opacity:1;
+    
+
+}
+
+.p1, .p2 {
+
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+
+}
+
+.begin, .our-recipes {
+
+    margin-top:30px;
+    margin-bottom:20px;
+
+}
+
+/**===== Modal-overlay ====**/ 
+.modal-overlay {
+
+    background-color:rgba(0,0,0, 0.8);
+    width: 100%;
+    height:100%;
+    position:fixed;
+    Top: 0;
+    opacity:0;
+    visibility: hidden;
+
+}
+
+.modal {
+
+    background-color: white;
+    width:610px;
+    height: 413px;
+    margin: 5vh auto;
+    position: absolute;
+    top:265px;
+    bottom:355px;
+    left:330px;
+    right:380px;
+    border-radius: 16px;
+    
+
+}
+
+.close-modal button {
+
+    color: #999999;
+    background-color: white;
+    width: 119px;
+    height: 19px;
+    position: absolute;
+    top:364px;
+    bottom:30px;
+    right:281px;
+    left: 250px;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 19px;
+    cursor: pointer;
+    
+    
+}
+
+.modal-overlay.active {
+
+    opacity:1;
+    visibility: visible;
+
+}
+
+.modal-content img {
+
+    
+    width:550px;
+    height: 200px;
+    border-radius: 15px;
+    position: absolute;
+    /*margin: 30px 50px 183px 30px;*/
+    top:30px;
+    bottom:30px;
+    right: 30px;
+    
+
+}
+
+#food {
+
+    width:332px;
+    height:28px;
+    top: 250px;
+    right:164px;
+    left: 164px;
+    bottom: 135px;
+    color:var(--color-black);
+    opacity:1;
+    position: absolute;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    
+ 
+  
+}
+
+#author {
+
+    width:150px;
+    height:21px;
+    margin: 283px 257px 109px;
+    position: absolute;
+    opacity:1;
+    color:#777777;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+}
