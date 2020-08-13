@@ -1,0 +1,23 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://github.com",
+      "name": "Gilmara Pimentel",
+      "dob": "2000-01-01",
+      "degree": "Associates",
+      "delivery": "P",
+      "subjects": "maths; physic"
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://msn.com",
+      "name": "Janaina Pereira",
+      "dob": 113142355200000,
+      "degree": "Doctorate",
+      "delivery": "E",
+      "subjects": "Nursing, whatever",
+      "created_at": 1596034980343
+    }
+  ]
+}
