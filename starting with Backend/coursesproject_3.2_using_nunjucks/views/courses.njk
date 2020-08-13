@@ -1,0 +1,63 @@
+<
+    {% extends "layout.njk" %}
+        
+    {% block title %} 
+        <title>Cursos - Rocketseat</title>
+    {% endblock %}
+
+
+    {% block content %}
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in items %}
+
+        <div class="card" id="{{item.name}}">
+            <div class="card_image_container" id="s">
+                <img src="{{item.img_url}}">
+            </div>
+            <div class="card_content">
+                <p>{{item.name}}</p>
+            </div>
+
+            <div class="card_info">
+                <p>{{item.qtd_Modules}}</p>
+                <p class="card_price">{{item.price}}</p>
+
+            </div>
+        </div>
+
+        {% endfor %}
+        
+
+    </section>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <div class="close-modal">
+                <i class="material-icons">highlight_off</i>
+            </div>
+
+            <div class="maximize-modal">
+                <i class="material-icons">open_in_full</i>
+            </div>
+
+            <div>
+
+                <iframe src="" frameborder="0"></iframe>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scriptConteudo.js"></script>
+
+{% endblock %}
