@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+     
+
+:root  {
+
+    --color-gray: gray;
+
+}
+
+* {
+    margin: 0;
+    border:0;
+    padding: 0;
+
+    
+}
+
+body {
+    background: rgba(0, 70, 0 , 0.7);
+    font-family: 'Roboto', sans-serif;
+    color:var(--color-half-black);
+}
+
+header { 
+
+    width: 100%;
+    padding: 30px;
+    background-color:white;
+    /*text-align: center; Place this on links*/
+    box-sizing: border-box; /* This makes whatever padding, margin or border amount to respect the 100% width*/ 
+
+}
+
+/* Links on header */ 
+
+.links  {
+    
+   font-size: 22px;
+   text-align: center;
+
+
+}
+
+/* Margin applied only on the second link */
+.links a + a {
+    
+    margin-left: 32px;
+
+}
+
+.links a {
+    
+    text-decoration: none;
+    color:var(--color-gray);
+    position: relative;
+    
+}
+
+.links a.active {
+
+    color:forestgreen;
+    font-weight: 600;
+}
+
+/*  This is the configuration of hover effect. It starts with 0% width, then as the 2nd config below it goes to 100% */
+.links a:hover::after {
+    content: '';
+    height:2px;
+    width: 0%;    
+    position: absolute;
+    left:0px;
+    bottom:-4px;
+    background-color:var(--color-gray);
+    
+    
+}
+
+.links a:hover::after {
+    width: 100%;    
+    transition: width 1s cubic-bezier(0, 0.04, 1, 0.57);
+    
+}
