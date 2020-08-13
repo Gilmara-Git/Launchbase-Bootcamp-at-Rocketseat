@@ -1,0 +1,283 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+:root {
+    --color-white: white;
+    --color-black: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #4a56af;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(176, 215, 247);
+    
+}
+
+header {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 0.5px solid var(--color-white);
+}
+
+header div a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 28px;
+    padding: 30px;
+}
+
+.links a:hover {
+    transition: color 200ms;
+    color: rgb(176, 215, 247)
+}
+
+#wrapper {
+    text-align: center;
+    padding: 70px 22px 20px 22px;
+}
+
+#wrapper img {
+    margin-bottom: 32px;
+    border-radius: 50%;
+    border: 3px solid #dbdeeb;
+    height: 250px;
+}
+
+#wrapper h1 {
+    margin-bottom: 82px;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--color-white);
+}
+
+#wrapper p {
+    padding: 2px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#list-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;    
+    padding: 16px;
+}
+
+#list {
+    width: 120px;
+    /*border:1px solid #b0c7fd;*/
+    margin: 0 auto;
+    padding: 30px 40px 0 40px;
+}
+
+#list ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
+
+#list ul li {
+    display: block;
+    /**border-bottom:1px dotted white; */
+    height: 25px;
+    text-transform: uppercase;
+}
+
+/* div ul {
+
+display:grid;
+grid-template-columns:1fr;
+margin: 0 auto;
+
+
+}*/
+
+#links-footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#links-footer a {
+    color: var(--color-white);
+    text-align: center;
+    ;
+}
+
+#links-footer a:hover {
+    transition: color 200ms;
+    color: rgb(176, 215, 247);
+}
+
+/*Working on the CARDS*/
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: #18181a;
+}
+
+.card_image_container {
+    padding: 30px;
+    margin: auto 45px;
+}
+
+#s {
+
+    width:235.61px;
+    height:147.48px;
+    text-align: center;
+
+}
+
+#go{
+    
+    width:235.61px;
+    height:147.48px;
+    text-align: center;
+}
+
+
+.card_content {
+    padding: 30px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+
+.card_info p {
+    color: var(--color-white);
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.card_content p {
+    color: var(--color-white);
+    padding: 5px 20px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.card_price {
+    background-color: #4a56af;
+    filter: brightness(70%);
+    border-radius: 20px;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+/*  Configuring the modal0overlay*/
+
+.modal-overlay {
+
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top:0px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal {
+
+    background-color:var(--color-white);
+    height: 90%;
+    width:90%;
+    top:0;
+    margin: 5vh auto;
+    position: relative;
+    
+
+}
+
+.close-modal {
+
+    color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right:10px;
+    top:10px;
+    cursor: pointer;
+
+}
+
+.maximize-modal {
+    
+    color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right:38px;
+    top:9px;
+    cursor: pointer;
+
+
+}
+
+/* modal-overlay active */
+
+.modal-overlay.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+iframe {
+
+    position: absolute;
+    width:100%;
+    height: 90%;
+    top:50px;
+}
+
+.modal.xl {
+
+    Width:100%;
+    
+
+}
+
+.not-found {
+
+    width: 900px;
+    margin: 0 auto;
+}
+
+.not-found h1 {
+
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 220px;
+    color: var(--color-white);
+    
+}
+
+.not-found img {
+
+  padding: 170px 220px;
+  height: 300px;
+  width: 500px;
+  
+  
+}
+

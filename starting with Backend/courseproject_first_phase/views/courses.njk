@@ -1,0 +1,91 @@
+<
+    {% extends "layout.njk" %}
+        
+    {% block title %} 
+        <title>Cursos - Rocketseat</title>
+    {% endblock %}
+
+    {% block content %}
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+
+    <section class="cards">
+
+        <div class="card" id="starter">
+            <div class="card_image_container" id="s">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg">
+            </div>
+            <div class="card_content">
+                <p>Starter</p>
+            </div>
+
+            <div class="card_info">
+                <p>5 Módulos </p>
+                <p class="card_price">Gratuito</p>
+
+            </div>
+        </div>
+
+
+        <div class="card" id="launchbase">
+            <div class="card_image_container">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg">
+            </div>
+            <div class="card_content">
+                <p>LaunchBase</p>
+            </div>
+
+            <div class="card_info">
+                <p>8 Fases </p>
+                <p class="card_price">Pago</p>
+            </div>
+        </div>
+
+
+        <div class="card" id="gostack">
+            <div class="card_image_container" id="go">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg">
+            </div>
+            <div class="card_content">
+                <p>Go Stack</p>
+            </div>
+
+            <div class="card_info">
+                <p> x Módulos</p>
+                <p class="card_price">Pago</p>
+            </div>
+        </div>
+
+        <div>
+
+    </section>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <div class="close-modal">
+                <i class="material-icons">highlight_off</i>
+            </div>
+
+            <div class="maximize-modal">
+                <i class="material-icons">open_in_full</i>
+            </div>
+
+            <div>
+
+                <iframe src="" frameborder="0"></iframe>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="scriptConteudo.js"></script>
+
+{% endblock %}
