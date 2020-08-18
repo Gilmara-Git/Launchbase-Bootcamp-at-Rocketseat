@@ -25,6 +25,6 @@ This part of the project was about creating "routes" and "pages" to "show" and "
 
 ## Code information
 As the bootcamp progresses, more codes will be uploaded.
-The progress is going to be posted by steps accomplished.
+
 
 
