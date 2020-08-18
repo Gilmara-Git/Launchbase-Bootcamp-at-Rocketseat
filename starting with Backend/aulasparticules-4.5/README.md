@@ -13,7 +13,7 @@
 This is a project is about building a Web Application - Teachers and Students.
 
 ## Learning Objectives
-This part of the project was about creating "routes" to "store" edted teachers' data and to "delete" teachers' data.
+This part of the project was about creating "routes" to "store" edited teachers' data and to "delete" teachers' data.
 
 To store data, Http method PUT was used:
 
