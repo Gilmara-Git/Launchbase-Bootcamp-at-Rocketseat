@@ -9,7 +9,7 @@
 
 
 ## About - Step 4.4
-This is a project is about building a Web Application about Teachers and Students.
+This is a project is about building a Web Application - Teachers and Students.
 
 ## Learning Objectives
 This part of the project was about creating "routes" and "pages" to "show" and "edit" Teachers that have been previously created. 
