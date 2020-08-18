@@ -16,7 +16,7 @@ This part of the project was about creating "routes" and "pages" to "show" and "
 
 - For page show, functions to properly display "age", "degree" were created. For the follow ups, method "split" was used to generate an array. To properly, display the field "since" the constructor "Intl" was applied. 
 
-- For page edit, we recover the "id" from req.params, validated if teacher existed, then return the teacher data to be edited. To properly display dob, we used method splice.
+- For page edit, we recover the "id" from req.params, validated if teacher existed, then return the teacher data to be edited. To properly display dob, we used method slice.
 
 ## Languages used
 - Html5 (Hypertext)
