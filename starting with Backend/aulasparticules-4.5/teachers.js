@@ -107,7 +107,6 @@ exports.edit = function (req, res) {
            
 exports.update = function(req, res) { //put
 const { id } = req.body
-Number(id)
 let index = 0 
 
 const foundTeacher = data.teachers.find(function(teacher, foundIndex){ // we need the index, to save the right teacher info
@@ -124,7 +123,8 @@ const foundTeacher = data.teachers.find(function(teacher, foundIndex){ // we nee
     const teacher = {
         ...foundTeacher,
         ...req.body,
-        dob: Date.parse(req.body.dob)    
+        dob: Date.parse(req.body.dob),
+        id: Number(req.body.id)
 
     }
     data.teachers[index] =  teacher
