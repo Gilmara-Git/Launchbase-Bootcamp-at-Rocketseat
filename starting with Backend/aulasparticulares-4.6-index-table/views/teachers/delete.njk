@@ -1,0 +1,118 @@
+{% extends 'layout.njk' %}
+  {% block head %}
+
+        <title>Delete profile</title> 
+        <link rel="stylesheet" href="/form.css"/>
+    
+    {% endblock %}
+
+{% block content %}
+
+<form class="card" method="POST" action="/teachers?_method=DELETE">
+
+    <section class="image" style="background:url(https://source.unsplash.com/collection/10659281/300x300) no-repeat center center /cover"></section>
+
+     <section class="details">
+
+         <div id="title">Delete Teacher</div>
+        
+        <div class="item">
+            <div id="top-item">Avatar url</div>
+            <div>
+                <input type="url" placeholder="http://photo-address"
+                       name="avatar_url"
+                       value="{{teacher.avatar_url}}"/> 
+                       
+                </div>
+        </div>
+
+        <div class="item">
+            <div>Name</div>
+            <div>
+                <input type="text" placeholder="Full name"
+                       name="name"
+                       value="{{teacher.name}}"/>
+            </div>
+        </div>
+
+
+    <div class="item">
+            <div>Date of birth</div>
+
+            <div>
+                <input type="date" 
+                       name="dob"
+                       value="{{teacher.dob}}" />
+            </div>
+     </div>       
+
+<div class="item">
+            <div>Degree</div>
+
+            <div>
+                <select name="degree" id="select"> 
+
+                 <option value="H"{% if teacher.degree =="H" %} selected {% endif %}>High School</option>  
+                 <option value="A"{% if teacher.degree =="A" %} selected {% endif %}>Associates</option>      
+                 <option value="B"{% if teacher.degree =="B" %} selected {% endif %}>Bachelor</option>
+                 <option value="M"{% if teacher.degree =="M" %} selected {% endif %}>Masters</option>
+                 <option value="D"{% if teacher.degree =="D" %} selected {% endif %}>Doctorate</option>
+                 
+
+                </select>
+                               
+            </div>
+
+     </div>  
+
+<div class="item">
+
+            <div>Class delivery method</div>
+            <div>
+            <span>
+                <input type="radio" name="delivery" id="person" value="P" 
+                {% if teacher.delivery =="P" %} 
+                checked
+                {% endif %}/><label for="person">Presential</label>
+                
+            </span>
+            
+                           
+            <span>
+                <input type="radio" name="delivery" id="online" value="E" 
+                {% if teacher.delivery =="E" %} 
+                checked
+                {% endif %}/><label for="online">E-learning</label>
+                
+            </span>
+
+            </div>
+            
+     </div>  
+
+     <div class="item">
+
+            <div>Subjects taught</div>
+            <div>
+            <span id="form">
+                <input type="text" placeholder="Separate subjects you teach by comma."
+                       name="subjects"
+                       value="{{teacher.subjects}}"/>
+                     
+            </span>
+            
+            </div>
+            
+     </div>  
+            <button id="confirm-deletion" type="submit">Confirm deletion</button>
+
+            <input 
+            type="hidden" 
+            name="id" 
+            value="{{teacher.id}}"/>
+
+</form>
+
+</section>
+
+{% endblock content %}
