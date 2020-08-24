@@ -1,0 +1,343 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+     
+
+:root  {
+
+    --color-gray:#555;
+    --color-details-background:#e2dfdf;
+
+}
+
+* {
+    margin: 0;
+    border:0;
+    padding: 0;
+    
+}
+
+body {
+    background: url("./images/bright.jpg") no-repeat center center/cover;
+    /*background: rgba(0, 70, 0 , 0.7);*/
+    font-family: 'Roboto', sans-serif;
+    color:var(--color-half-black);
+    
+}
+
+header { 
+
+    width: 100%;
+    padding: 30px;
+    background-color:rgba(58, 28, 4, 0.7);
+    /*text-align: center; Placed this on links*/
+    box-sizing: border-box; /* This makes whatever padding, margin or border amount to respect the 100% width*/ 
+    border-bottom: 1.5px solid whitesmoke;
+}
+
+/* ===============Links on header ======================*/ 
+
+.links  {
+    
+   font-size: 22px;
+   text-align: center;
+
+}
+
+/* Margin applied only on the second link */
+.links a + a {
+    
+    margin-left: 32px;
+
+}
+
+.links a {
+    
+    text-decoration: none;
+    color:white;
+    position: relative; /* Position relative in order to position pseudo-element*/
+    
+}
+
+.links a.active {
+    /*rgb(147, 155, 147)*/
+    color:forestgreen;
+    font-weight: 600;
+}
+
+.links a:hover {
+
+    font-weight: 600;
+}
+
+/*  This is the configuration of hover effect on links. 
+It starts with 0% width, then as the 2nd config below it goes to 100% */
+.links a:hover::after {
+    content: '';
+    height:1.5px;
+    width: 0%;    
+    position: absolute;
+    left:0px;
+    bottom:-4px;
+    background-color:whitesmoke;
+       
+}
+
+.links a:hover::after {
+    width: 100%;    
+    transition: width 1s cubic-bezier(0, 0.04, 1, 0.57);
+    
+}
+
+/*==================== Card ====================== */
+
+.card {
+
+    width:800px;
+    min-height: 400px; /* Min height so the photo can adjust on the card*/
+    background-color:white ;
+    margin: 60px auto;
+    box-shadow: 0.5px 0.5px 7px 4px whitesmoke;
+    display:grid;
+    grid-template-columns: 40% 60%; 
+    /*Animation for photos - right side of grid*/      
+    animation-name:turn;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    border-radius: 5px;
+
+}
+
+@keyframes turn {
+
+    from{   opacity: 0;;
+            transform: translateX(1px);
+            /*transform: scale(2, 0.5);*/
+            /*transform: rotate(0.3 turn);*/
+            /*transform: skew(30deg, 20deg);*/
+            /*transform: matrix(1, 2, 3, 4, 5, 6);*/
+            /*transform: translate(120px, 50%);*/
+            
+       }
+    to  { opacity:1;   }
+}
+/* End of animation for photos*/
+
+
+/* Left side of grid */
+
+.details {
+
+    padding:55px;
+    background-color:var(--color-details-background);
+}
+
+.details div#title {
+    color:var(--color-gray);     
+    font-size:23px;
+    /*line-height: 33px;*/
+    font-weight:bold;   
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.item div:nth-child(1){
+
+    color:var(--color-gray);     
+    font-size:18px;
+    text-align: left;
+    font-weight:bold;
+    border-top: 1px solid var(--color-gray);   
+    padding:10px 0px;
+    letter-spacing: 1px;
+    margin-bottom:0px;
+   
+}
+
+.details div#title,
+.item div#top-item {
+
+    border: none;
+}
+
+
+.item div:nth-child(2){
+
+    color:forestgreen;      
+    font-size:16px;
+    /*font-weight: bold;*/
+    letter-spacing: 0.6px;
+    text-align: left;
+    margin-top: 0px;
+   
+    
+}
+
+.item div:nth-child(2) span {
+
+font-size: 12px;
+text-transform: capitalize;
+padding: 4px;
+background-color: rgba(0,0,0,0.6);
+border-radius: 8px;
+color: rgb(62, 179, 62);
+display:inline-block;
+margin-bottom: 5px;
+margin-top:0px;
+
+ 
+}
+
+
+/* Edit button on Show page*/
+
+.buttons-on-show {
+ 
+display: flex;
+gap:20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.edit-button, .delete-button {
+
+    outline: none;
+    padding:10px;
+    background-color:rgba(0,0,0,0.6) ;
+    font-size:16px;
+    /*font-weight: bold;*/
+    color:rgb(62, 179, 62);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    /*display: block;*/
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    
+
+}
+
+.delete-button , #confirm-deletion {
+
+    background-color: rgb(247, 67, 67);
+
+}
+
+
+form#delete-resource button[type=submit] { /*This is the same #confirm-deletion button*/
+    margin-top: 10px;
+}
+/* Table on Page Index*/
+
+.table-container {
+
+    display: block;
+    padding:40px;
+    box-sizing: border-box;
+    
+}
+
+.table-container table {
+
+    border-spacing: 0;
+}
+
+table thead tr th {
+
+    text-align:left;
+    text-shadow: 0.2px 0.2px 0.5px forestgreen;
+    
+}
+
+table thead tr th:last-child {
+
+    text-align: center;
+}
+
+
+table tbody tr td:last-child{
+
+    text-align: center; 
+}
+
+
+th {
+
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    font-weight: normal;
+    
+    
+
+}
+
+th, td {
+
+    padding: 16px;
+    border-bottom: 1px solid #d4d1d1;
+}
+
+
+
+table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+table tbody td a, .table-container > a {
+
+    background-color: forestgreen;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    
+}
+
+.table-container > a {
+
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-left:16px;
+}
+
+
+tbody tr td:first-child span {
+
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -1px forestgreen;
+    border: 2px solid white;
+   
+
+}
+
+tbody tr td:first-child {
+
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+
+}
+
+
+tbody tr td:nth-child(2) span {
+
+    background-color: forestgreen;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin:1px;
+  
+}

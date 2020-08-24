@@ -1,0 +1,62 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/10659281/300x300",
+      "name": "Student of the Year",
+      "email": "gilmarapq@hotmail.com",
+      "dob": -27107481600000,
+      "grade": "12",
+      "hours_classes": "3"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1564522365984-c08ed1f78893?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Ezilda A Maia",
+      "email": "gilmarapq@hotmail.com",
+      "dob": -1162339200000,
+      "grade": "5",
+      "hours_classes": "1"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1521264100864-12e944c1b97b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Ezilda M",
+      "email": "gilmarapq@hotmail.com",
+      "dob": -783648000000,
+      "grade": "8",
+      "hours_classes": "10"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/9554884/500x500",
+      "name": "Alzira Maia",
+      "dob": -152496000000,
+      "degree": "D",
+      "delivery": "P",
+      "subjects": "Nursing, whatever",
+      "created_at": 1598281604970
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1598123355654-c2cade206752?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "India",
+      "dob": -107308800000,
+      "degree": "B",
+      "subjects": "Crm, web development",
+      "created_at": 1598282148676
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://images.unsplash.com/photo-1598103586658-f25ffecebed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+      "name": "Art",
+      "dob": -454464000000,
+      "degree": "D",
+      "delivery": "P",
+      "subjects": "Art, paint",
+      "created_at": 1598284126756
+    }
+  ]
+}
