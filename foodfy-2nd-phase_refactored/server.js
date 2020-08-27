@@ -2,7 +2,7 @@ const express = require("express")
 const server = express()
 const nunjucks =  require("nunjucks")
 const recipes = require("./data")
-const indexRecipes = require("./data_index")
+
 
 
 nunjucks.configure("views", { express: server })
@@ -36,4 +36,10 @@ server.get("/receitas/:index" , function(req, res){
 
     res.render("receita_detalhes", {details: recipes[recipeIndex]})
 })
+
+server.use(function(req, res){
+
+   return res.status(404).render("not-found")
+})
+
 server.listen(5500, function(){  console.log("Server is UP") })
