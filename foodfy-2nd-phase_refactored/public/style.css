@@ -625,3 +625,27 @@ div#add-info .button-show:hover,  div#add-info .button-hide:hover {
 
     display:none;
 }
+
+
+/* Page recipe*/
+
+.not-found {
+
+    margin-top: 80px;
+    width:700px;
+    height:800px;
+    background-image: url("assets/recipe_not_found.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+
+#recipe-not-found  {
+    width:400px;
+    font-size: 38px;
+    margin: 0 auto;
+    color: wheat;
+    padding: 350px 200px;
+}
