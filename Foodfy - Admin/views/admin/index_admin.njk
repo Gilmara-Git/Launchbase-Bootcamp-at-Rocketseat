@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>Foodfy Admin</title>
+{% endblock %}
+
+{% block header %}
+    <div class="header-foodfy-admin">
+        <img id="logo-foodfy-admin" src="/assets/logo_admin.png" alt="Logo Foodfy Admin">
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <div id="manage-recipes">
+        <h2>Manage Recipes</h2>
+        <a href="/">Home</a> 
+       
+    </div>
+
+    <section class="cards-foodfy-admin">
+
+        {% for sixrecipe in sixrecipes %}
+            <div class="card-admin" id="{{sixrecipe.id}}">
+
+                <div class="card-img-admin">
+                    <img src="{{sixrecipe.recipe_image}}" alt="burger">
+                </div>
+
+                <div class="card-info-admin">
+                    <h6 class="food-name">{{sixrecipe.recipe_title}}</h6>
+                    <p class="food-author">{{sixrecipe.recipe_author}}</p>
+                    <a href="/admin/receitas/{{sixrecipe.id}}">Details</a>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </section>
+<div id="new-recipe-link"><a id="new-recipe" href="/admin/receitas/create">New</a></div>
+</div>
+
+
+{% endblock %}
+
+{% block footer%}{% endblock %}

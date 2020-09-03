@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>Foodfy Admin</title>
+{% endblock %}
+
+{% block header %}
+    <div class="header-foodfy-admin">
+        <img id="logo-foodfy-admin" src="/assets/logo_admin.png" alt="Logo Foodfy Admin">
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <div id="manage-recipes" class="edit-recipes">
+        <h2>Recipe:
+            {{recipes.recipe_title}}</h2>
+
+        <a href="/admin/receitas/{{recipes.id}}/edit">Edit Recipe</a>
+
+    </div>
+    <div class="card-recipe-img">
+        <img src="{{recipes.recipe_image}}" alt="Recipe image">
+    </div>
+
+    <div class="receita-nome-autor">
+        <h6 class="food-name">{{recipes.recipe_title}}</h6>
+        <p class="food-author">{{recipes.recipe_author}}</p>
+    </div>
+
+    <div id="ingredients">Ingredients
+
+    </div>
+
+    <div class="more-details-ing">
+        {%for ingredient in recipes.ingredients %}
+            <ul>
+                <li>{{ingredient}}</li>
+
+            </ul>
+        {% endfor %}
+    </div>
+
+    <div id="preparation">Preparation
+
+    </div>
+
+    <div class="more-details-prep">
+        {% for step in recipes.steps%}
+            <ul>
+                <li>{{step}}</li>
+
+            </ul>
+            {% endfor%}
+        </div>
+
+        <div id="add-info">Additional Information
+
+        </div>
+
+        <div class="more-details-info">{{recipes.add_information}}</div>
+
+    </div>
+
+{% endblock %}
+
+{% block footer%}{% endblock %}

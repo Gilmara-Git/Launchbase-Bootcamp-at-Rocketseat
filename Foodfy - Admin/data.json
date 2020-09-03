@@ -1,0 +1,205 @@
+{
+  "recipes": [
+    {
+      "id": 3,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "recipe_title": "Burguer de Newark ",
+      "recipe_author": "Alzira",
+      "ingredients": [
+        "Povilho azedo",
+        "500 gramas de queijo"
+      ],
+      "steps": [
+        "Torre cebola e alho no azeite",
+        "Adicione a care moída"
+      ],
+      "add_information": "Adiciona a pomarola e pao de hamburger\r\nAdicione açucar para tirar a acidez",
+      "index": 0
+    },
+    {
+      "id": 4,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "recipe_title": "Burguer bound",
+      "recipe_author": "Alzira do pao de queijo",
+      "ingredients": [
+        "Povilho azedo",
+        "500 gramas de queijo"
+      ],
+      "steps": [
+        "Torre cebola e alho no azeite",
+        "Adicione a care moída"
+      ],
+      "add_information": "Adiciona a pomarola e pao de hamburger\r\nAdicione açucar para tirar a acidez",
+      "index": 1
+    },
+    {
+      "id": 5,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
+      "recipe_title": "Deli Burger",
+      "recipe_author": "Burger bound",
+      "ingredients": [
+        "burger bread",
+        "burger filling"
+      ],
+      "steps": [
+        "Put things on top of each other",
+        "Put mayo in between components"
+      ],
+      "add_information": "Serve",
+      "index": 2
+    },
+    {
+      "id": 6,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "recipe_title": "Bobó de Camarão",
+      "recipe_author": "Mr. Krab",
+      "ingredients": [
+        "Not lobster used",
+        "Only Shrimp"
+      ],
+      "steps": [
+        "Put shrimp in hot boiler water",
+        "Leave it for 5 minutes"
+      ],
+      "add_information": "Eat",
+      "index": 3
+    },
+    {
+      "id": 7,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
+      "recipe_title": "Bobó de Camarão",
+      "recipe_author": "Mr. Krab",
+      "ingredients": [
+        "Not lobster used",
+        "Only Shrimp"
+      ],
+      "steps": [
+        "Put shrimp in hot boiler water",
+        "Leave it for 5 minutes"
+      ],
+      "add_information": "Eat",
+      "index": 4
+    },
+    {
+      "id": 9,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "recipe_title": "Macarrão a bolonhesa",
+      "recipe_author": "adgasdg",
+      "ingredients": [
+        "asdga",
+        "asdga"
+      ],
+      "steps": [
+        "asdga",
+        "asdga",
+        ""
+      ],
+      "add_information": "asdgasdgds",
+      "index": 5
+    },
+    {
+      "id": 10,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
+      "recipe_title": "Pizza 4 estações",
+      "recipe_author": "Fabiana Melo",
+      "ingredients": [
+        "1 xícara (chá) de leite",
+        "1 ovo",
+        "1 colher (chá) de sal",
+        "1 colher (chá) de açúcar",
+        "1 colher (sopa) de margarina",
+        "1 e 1/2 xícara (chá) de farinha de trigo",
+        "1 colher (sobremesa) de fermento em pó",
+        "1/2 lata de molho de tomate",
+        "250 g de mussarela ralada grossa",
+        "2 tomates fatiados",
+        "azeitona picada",
+        "orégano a gosto"
+      ],
+      "steps": [
+        "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.",
+        "Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos",
+        "Retire do forno e despeje o molho de tomate.",
+        "Cubra a massa com mussarela ralada, tomate e orégano a gosto",
+        "Leve novamente ao forno até derreter a mussarela"
+      ],
+      "add_information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!",
+      "index": 6
+    },
+    {
+      "id": 11,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "recipe_title": "dagaga",
+      "recipe_author": "adsgadag",
+      "ingredients": [
+        "adga",
+        "fhadfhad"
+      ],
+      "steps": [
+        "adfhafd",
+        "adfhadf"
+      ],
+      "add_information": "adfhadfhdh",
+      "index": 7
+    },
+    {
+      "id": 12,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "recipe_title": "dgfjghkhjl",
+      "recipe_author": "ewrrwyrwurt",
+      "ingredients": [
+        "ytiiuyouyoi"
+      ],
+      "steps": [
+        "pifgjdjdhd"
+      ],
+      "add_information": "aszfbfmhmhk",
+      "index": 8
+    },
+    {
+      "id": 13,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "recipe_title": "fhafdhadfh",
+      "recipe_author": "dgjfgjfhj",
+      "ingredients": [
+        "fhjfjgh"
+      ],
+      "steps": [
+        "fgjf"
+      ],
+      "add_information": "fjfggfjf",
+      "index": 9
+    },
+    {
+      "id": 14,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "recipe_title": "Lasanha",
+      "recipe_author": "Lasanha",
+      "ingredients": [
+        "Lasanha"
+      ],
+      "steps": [
+        "Lasanha",
+        "Lasanha"
+      ],
+      "add_information": "Lasanha",
+      "index": 10
+    },
+    {
+      "id": 15,
+      "recipe_image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
+      "recipe_title": "Macarrao ao alho e oleo",
+      "recipe_author": "Macarrao",
+      "ingredients": [
+        "Macarrao",
+        "Macarrao"
+      ],
+      "steps": [
+        "Macarrao",
+        "Macarrao"
+      ],
+      "add_information": "Macarrao\r\nMacarrao\r\nMacarrao\r\n",
+      "index": 11
+    }
+  ]
+}
