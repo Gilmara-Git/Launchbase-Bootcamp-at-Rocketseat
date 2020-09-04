@@ -1,0 +1,351 @@
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+
+:root {
+
+    --primary-color: #7159c1;
+    --secondary-color: #f7df1d;
+}
+* {
+    margin:0;
+    padding:0;
+    border:none;
+
+}
+
+body {
+
+    font-family:'Roboto', sans-serif;
+    /*background-color:var(--primary-color);*/
+     background:url("./images/sky.jpg") no-repeat center center/cover;
+}
+
+header { 
+    border-bottom: 0.1px solid white;
+    /*background-color:white;*/
+    width: 100%; 
+    padding: 35px;
+    text-align: center;
+    box-sizing: border-box;
+ 
+
+}
+
+.links {
+
+    font-size: 22px;
+    
+
+}
+
+/* Margin left only on the 2nd link 'members'*/
+.links a + a {
+
+    margin-left: 32px;
+    
+}
+    
+.links a {        
+        text-decoration: none;
+        color:rgba(0,0,0,0.9);
+        position: relative; /* this is father of .links a:hover::after*/
+        }
+
+.links a.active {
+
+font-weight: bold;
+color: var(--secondary-color);
+
+} 
+
+.links a:hover {
+
+    color:whitesmoke;
+
+}
+
+
+/* Let's organize the transition for the hover effect*/ 
+/* As we are going to work with the width we are going to set width:100% here and 0%*/
+/* In other words, we will start with 0 % and progress to the 100%*/
+
+
+.links a:hover::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    
+}
+
+.links a:hover::after  {
+    width: 100%;
+    transition: width 200ms cubic-bezier(1, 0.2, 0.65, 0.89);
+
+}
+
+/* Card on page instructor */
+
+.card { 
+
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    /* Center*/
+    margin: 170px auto;
+    
+    /* Grid with 2 columns*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* shadow*/
+    box-shadow: 0px 2px 5px 6px rgba(0,0,0,0.4);    
+    /* Creating an animation */
+    animation-name:up 200ms ease;   
+    
+     
+}
+
+@keyframes up { 
+
+    from {  opacity:0;
+            transform: translateY(15px);
+
+    }
+        to { opacity:1;
+            
+        }
+    
+    }
+
+
+    /*   Details - right side of the grid  - Instructor page*/
+
+    .details {
+
+        padding:32px;
+
+    }
+    
+    .details .item {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 16px 0px; /* After inserting this padding we needed to adjust card to min-height*/
+
+    }   
+
+    .details .item:last-child {
+
+        border: none;
+
+    }
+
+    .details h3 ,
+    .details .item div:nth-child(1){
+
+        font-size: 14px;  
+        line-height: 24px;      
+        color: #777;
+        letter-spacing: 0.7px;
+        font-weight: normal;
+        
+
+    }
+
+    .details .item div:nth-child(2) {
+
+        color: #555;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .details h3 {
+
+        text-transform: uppercase;
+        font-weight: bold;
+        color:var(--primary-color);
+
+    }
+
+    /* Creating labels on span tags still on the right side of the grid*/
+
+    .details .item div:nth-child(2) span {
+
+        padding: 4px 12px;
+        background-color:var(--secondary-color);
+        border-radius: 16px;
+        color:#777;
+        margin-right: 4px;
+        margin-top: 8px;
+        display:inline-block;/* Tive que tirar/* This allows margin-top to be applied and text does not fit all the line, just the padding space*/
+        font-weight: bold;
+        text-transform:uppercase;
+        font-size: 12px;
+        
+
+    }
+
+    /* FORM */
+
+
+    form input, select { 
+
+        outline: none;
+        width:100%;
+         /* Let's make that color, fs and fw are different when there is a input Same as (details .item div:nth-child(2))*/
+        color: #555;
+        font-weight: bold;
+        font-size: 18px;
+       
+    }
+
+    form input[type="radio"] {
+        /*display:inline-block; Tive que tirar - estava desalinhado a palavra male e female com a bolinha radio
+         This allows margin-top to be applied and text does not fit all the line, just the padding space*/
+        width:initial;
+        margin:3px;
+
+    }
+
+    form input::placeholder {
+
+        font-weight: normal;
+        font-size: 16px;      
+
+    }
+
+
+    #form-delete button[type="submit"] { 
+
+        background-color: lightcoral;
+        margin-top: 8px;
+    }
+    
+   a.button, button[type="submit"] {
+
+        padding: 8px 32px;
+        background-color: var(--primary-color);
+        margin-top: 32px;
+        width:100%;
+        font-size: 16px;
+        color: white;
+        border-radius: 4px;
+        
+    }
+
+
+    a.button {
+       
+        display:block;  
+        box-sizing: border-box;    
+        text-align: center;  
+        text-decoration: none;
+      
+    }
+
+    /*===== Index page - Table */
+
+   .table-container {
+
+        display: block;
+        padding:40px;
+        box-sizing: border-box;/* This is to make padding be counted , in other words, padding will not make the box bigger*/
+     }
+
+
+.table-container table {
+
+    border-spacing: 0;
+
+
+}
+
+.table-container thead tr th {
+
+    text-align: left;
+
+}
+
+.table-container thead tr th:last-child, 
+tr td:last-child {
+
+    text-align:center;
+
+}
+
+td, th {
+
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+th {
+
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+
+}
+
+tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+tbody tr td:first-child span { /* all "tr" , get the 1st child of "td", that is "span"*/
+
+    width: 48px;
+    height:48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+  
+}
+
+tbody tr td:first-child  {
+
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    
+  
+}
+
+tbody tr td:last-child a, .table-container > a  {
+
+text-decoration: none;
+background-color: var(--primary-color);
+padding: 8px 16px;
+text-transform: uppercase;
+border-radius: 4px;
+color: white;
+font-size: 12px;
+
+
+}
+
+.table-container > a { 
+
+    margin-bottom: 16px;
+    display: inline-block;   
+
+}
+
+tbody tr td:nth-child(2) span {
+
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    display: inline-block;
+    margin-right: 2px;
+    text-transform: uppercase;
+}
