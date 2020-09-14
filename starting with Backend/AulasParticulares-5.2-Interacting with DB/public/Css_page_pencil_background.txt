@@ -1,0 +1,182 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+     
+
+:root  {
+
+    --color-gray:#555;
+
+}
+
+* {
+    margin: 0;
+    border:0;
+    padding: 0;
+    
+}
+
+body {
+    background: url("./images/pencil.jpg") no-repeat center center/cover;
+    /*background: rgba(0, 70, 0 , 0.7);*/
+    font-family: 'Roboto', sans-serif;
+    color:var(--color-half-black);
+    
+}
+
+header { 
+
+    width: 100%;
+    padding: 30px;
+    /*background-color:rgba(58, 28, 4, 0.4);*/
+    /*text-align: center; Placed this on links*/
+    box-sizing: border-box; /* This makes whatever padding, margin or border amount to respect the 100% width*/ 
+    border-bottom: 1.5px solid var(--color-gray);
+}
+
+/* ===============Links on header ======================*/ 
+
+.links  {
+    
+   font-size: 22px;
+   text-align: center;
+
+}
+
+/* Margin applied only on the second link */
+.links a + a {
+    
+    margin-left: 32px;
+
+}
+
+.links a {
+    
+    text-decoration: none;
+    color:var(--color-gray);
+    position: relative; /* Position relative in order to position pseudo-element*/
+    
+}
+
+.links a.active {
+    /*rgb(147, 155, 147)*/
+    color:forestgreen;
+    font-weight: 600;
+}
+
+.links a:hover {
+
+    font-weight: 600;
+}
+
+/*  This is the configuration of hover effect on links. 
+It starts with 0% width, then as the 2nd config below it goes to 100% */
+.links a:hover::after {
+    content: '';
+    height:1.5px;
+    width: 0%;    
+    position: absolute;
+    left:0px;
+    bottom:-4px;
+    background-color:var(--color-gray);
+       
+}
+
+.links a:hover::after {
+    width: 100%;    
+    transition: width 1s cubic-bezier(0, 0.04, 1, 0.57);
+    
+}
+
+/*==================== Card ====================== */
+
+.card {
+
+    width:800px;
+    min-height: 400px; /* Min height so the photo can adjust on the card*/
+    background-color:white ;
+    margin: 90px auto;
+    box-shadow: 0.5px 0.5px 8px 3px var(--color-gray);
+    display:grid;
+    grid-template-columns: 40% 60%; 
+    /*Animation for photos - right side of grid*/      
+    animation-name:turn;
+    animation-duration: 0.3s;
+    animation-direction: reverse;
+    border-radius: 5px;
+
+}
+
+@keyframes turn {
+
+    from{   opacity: 0;;
+            /*transform: translateX(2px);*/
+            /*transform: scale(2, 0.5);*/
+            transform: rotate(0.5turn);
+            /*transform: skew(30deg, 20deg);*/
+            /*transform: matrix(1, 2, 3, 4, 5, 6);*/
+            /*transform: translate(120px, 50%);*/
+            
+       }
+    to  { opacity:1;   }
+}
+/* End of animation for photos*/
+
+
+/* Left side of grid */
+
+.details {
+
+    padding:40px;
+}
+
+.details div#title {
+    color:var(--color-gray);     
+    font-size:23px;
+    /*line-height: 33px;*/
+    font-weight:bold;   
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.item div:nth-child(1){
+
+    color:var(--color-gray);     
+    font-size:18px;
+    text-align: left;
+    font-weight:bold;
+    border-top: 1px solid var(--color-gray);   
+    padding:10px 0px;
+    letter-spacing: 1px;
+}
+
+.details div#title,
+.item div#age {
+
+    border: none;
+}
+
+
+.item div:nth-child(2){
+
+    color: green;      
+    font-size:20px;
+    text-align: left;
+   
+    
+}
+
+.item div:nth-child(2) span {
+
+font-size: 12px;
+/*line-height: 24px;*/
+text-transform: capitalize;
+padding: 4px;
+background-color: var(--color-gray);
+border-radius: 8px;
+color: rgb(62, 179, 62);
+display:inline-block;
+margin-bottom: 5px;
+
+ 
+}
+
