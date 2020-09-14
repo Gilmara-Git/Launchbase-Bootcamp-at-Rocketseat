@@ -3,7 +3,7 @@
 
 <h1 align="center"><b>Teachers and Students</b></h1>
 
-<h1 align="center"><p>Teachers' Database</p>
+<h1 align="center"><p>"my_teachers" Database</p>
     <img src="https://ik.imagekit.io/cnbmdh4b9w/my_teachers_db.jpg_FwVPFWG3ShD.png">   
 </h1>
 
