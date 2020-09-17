@@ -1,0 +1,73 @@
+
+/* FORM */
+
+form input {
+
+    outline:none;
+    width:100%;
+    color:forestgreen;      
+    font-size:18px; 
+    /*font-weight: bold;  */
+    background-color: var(--color-details-background);
+    
+   
+}
+
+form input::placeholder {
+
+        
+    font-size:16px;
+    font-weight: normal;
+    color: forestgreen;
+   
+
+}
+
+
+.details .item div:nth-child(2) span#form {
+
+  padding:0px;
+  width: 100%;
+  
+
+}
+
+form input[type="date"] {
+         
+        
+    font-size:18px;
+    /*font-weight: bold;*/
+
+}
+
+form select {
+         
+    font-size:16px;
+    width: 100%;
+    background-color: #e2dfdf;
+    color:forestgreen;
+    /*font-weight: bold;*/
+    outline:none;
+
+}
+
+.item div:nth-child(2) span input[type="radio"] {
+    width:initial;
+    margin-right:4px;
+    
+
+}
+
+button[type="submit"] {
+
+    outline: none;
+    padding:10px 32px;
+    background-color:rgba(0,0,0,0.6)  ;
+    font-size:16px;
+    /*font-weight: bold;*/
+    color:rgb(62, 179, 62);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: 0.8px;
+}
