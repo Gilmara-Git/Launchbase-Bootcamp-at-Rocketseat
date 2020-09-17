@@ -28,7 +28,7 @@ As the bootcamp progresses, more codes will be uploaded.
 Done so far:  
 - Along the way I have created the Teachers and Students' page and its routes, using HTTP method such as GET, POST, PUT and DELETE. 
 - Created "my_teachers" database, teachers and students' table to store the application data.
- - Created a relationship between **teachers** and **students** tables and used SQL queries to display the students' names in ASCENDING order and to display the total number of Students thar are linked to a Teacher. 
+ - Created a relationship between **teachers** and **students** tables and used SQL queries to display the students' names in ASCENDING order and to display the **total number* of Students that are linked to a Teacher. 
 - Finally, created a filter to on the Teachers page, so user can search by teacher or subjects. 
 
 
