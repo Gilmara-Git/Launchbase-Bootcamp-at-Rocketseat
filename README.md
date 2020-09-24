@@ -12,7 +12,7 @@ This a bootcamp to help you learn and practice the fundamentals of Web Developme
  - [Teacher and Students Management](https://github.com/Gilmara-Git/launchbase-rocketseat/tree/master/starting%20with%20Backend/AulasParticulares-5.4-Pagination)
 
  - Application in progress:
-  - [FoodFy System](https://github.com/Gilmara-Git/launchbase-rocketseat/tree/master/Foodfy%20-%20Admin)
+  - [Foodfy System](https://github.com/Gilmara-Git/launchbase-rocketseat/tree/master/Foodfy%20-%20Admin)
 
 ## Languages / Technologies used
 - Html5 (Hypertext)
