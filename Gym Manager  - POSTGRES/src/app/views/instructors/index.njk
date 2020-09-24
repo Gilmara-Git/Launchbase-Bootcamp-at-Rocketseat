@@ -1,0 +1,55 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    
+    <div class="card table-container">
+
+        <div class="header">
+        <a class="button" href="/instructors/create">New</a>
+        <form method=GET action="/instructors/">
+            <input type="text" 
+            name="filter"
+            placeholder="Filter by name or services"
+            value="{{filter}}">
+
+            <button type="submit">Filter</button>
+        </form>
+
+        </div>
+        
+
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Instructor</th>
+                    <th>Services</th>
+                    <th>Members</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for instructor in instructors %}
+                <tr>                    
+                    <td><span style="background-image: url({{instructor.avatar_url}}"></span>{{instructor.name}}</td>
+                    <td>
+                        
+                        {% for service in instructor.services %}
+                            <span>{{service}}</span>
+                        {% endfor %}
+                           
+                    <td>{{instructor.total_members}}</td>    
+                    
+                    <td><a href="/instructors/{{instructor.id}}">View</a></td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+            
+
+        </table>
+    
+    </div>
+        
+{% endblock content %}
