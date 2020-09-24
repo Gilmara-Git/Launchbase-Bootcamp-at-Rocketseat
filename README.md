@@ -5,7 +5,6 @@
 It's a  bootcamp to help you learn and practice the fundamentals of Web Development. 
 
 ## Learnings
-- I have been learning the fundamentals of HTML5, CSS3 and JavaScript. 
 
 - Applications done:
  - [Gym System Management](https://github.com/Gilmara-Git/launchbase-rocketseat/tree/master/Gym%20Manager%20Final%20Phase).
