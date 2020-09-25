@@ -421,3 +421,20 @@ tbody tr td:nth-child(2) span {
     border-bottom: 1px dotted forestgreen;
 
 }
+
+/* Not found page*/
+
+#not-found  {
+    font-size: 70px;
+    display: flex;
+    color: white;
+    align-items: center;  
+    justify-content: center;   
+    height: 500px;
+    text-shadow: 1px 2px 1px black;
+}
+
+p#not-found  {
+
+    color: forestgreen;
+}
