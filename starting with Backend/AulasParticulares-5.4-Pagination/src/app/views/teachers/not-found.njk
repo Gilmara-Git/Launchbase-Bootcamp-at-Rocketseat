@@ -1,0 +1,12 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+
+   <p id="not-found">Teacher does not exist</p>
+
+   <script>
+      setTimeout(()=> { location.href="/teachers" }, 1000)
+   </script>
+
+{% endblock content %}
