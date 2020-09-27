@@ -1,0 +1,9 @@
+Using methods "split", "reverse" and "join" to unreverted name
+
+Split transforms string into an array
+Reverse reverts the string
+Join transforms array into string
+
+let name = 'aramlig';
+  let nameUnreversed = name.split("").reverse().join("")  
+  console.log(nameUnreversed) // gilmara
