@@ -19,10 +19,28 @@ body {
     
 }
 
-header {
+header, footer {
     padding: 30px;
     text-align: left;
     border-bottom: 0.5px solid var(--color-white);
+}
+
+footer {
+
+    color: var(--color-white);
+    border-bottom: none;
+    border-top: 0.5px solid var(--color-white);    
+    margin-top: 127px;
+    text-align: center;
+  
+
+}
+
+footer ul li {
+
+    list-style: none;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 header div a {
