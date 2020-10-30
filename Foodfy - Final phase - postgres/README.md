@@ -10,10 +10,10 @@
 
 
 ## About
-Foodfy was a project about building a Web Application for recipes.
+Foodfy is a project about building a Web Application for recipes.
 
 ## Learning Objectives
-- This was the final part of the project in which **chefs** pages were created in the **Admin** area. 
+- This part of the project **chefs** page was created in the **Admin** area. 
 So, now in addition to recipes, chefs can be created, edited and deleted **when** there is no **recipe** tied to it. 
 - **Filters** to search for recipes and chefs were added.
 Also, pagination was added to the recipes's page. 
